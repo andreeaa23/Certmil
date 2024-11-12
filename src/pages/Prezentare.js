@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import CheckIcon from '@mui/icons-material/Check';
 
 // Animație pentru secțiuni
 const fadeIn = keyframes`

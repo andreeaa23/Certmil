@@ -9,7 +9,8 @@ import ContainerP from '../components/ContainerP'
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    overflow-y: auto;             
+    overflow-y: auto; 
+    width: 100%;            
 
 `;
 

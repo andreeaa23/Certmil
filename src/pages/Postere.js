@@ -6,23 +6,23 @@ import styled from 'styled-components';
 
 // Container pentru galeria de postere, cu grid layout
 const GalleryContainer = styled.div`
-  display: grid;               /* Folosim grid pentru a organiza imaginile pe coloane */
-  grid-template-columns: repeat(3, 1fr);  /* 3 coloane egale */
-  gap: 20px;                    /* Spațiu între imagini */
+  display: grid;               
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 20px;                    
   padding: 20px;
-  justify-items: center;        /* Aliniază imaginile la centru pe orizontală */
-  overflow-x: auto;             /* Permite derularea orizontală dacă este necesar */
-  //scroll-snap-type: x mandatory; /* Permite alinierea la fiecare imagine în derulare */
-  -webkit-overflow-scrolling: touch; /* Permite derularea lină pe mobile */
-   height: 80vh;                 /* Setează înălțimea maximă a containerului la 80% din înălțimea vizibilă */
-  //overflow-y: auto;             /* Permite derularea verticală dacă conținutul depășește înălțimea containerului */
+  justify-items: center;        
+  overflow-x: auto;            
+  //scroll-snap-type: x mandatory; 
+  -webkit-overflow-scrolling: touch; 
+   height: auto;                
+  //overflow-y: auto;             
 `;
 
 // Stil pentru fiecare imagine
 const PosterImage = styled.img`
-  width: 100%;                /* Se va adapta lățimii coloanei */
-  height: auto;               /* Păstrează proporțiile imaginii originale */
-  object-fit: contain;        /* Asigură că imaginea nu se distorsionează */
+  width: 100%;             
+  height: auto;               
+  object-fit: contain;      
 `;
 
 const Title = styled.h1`
@@ -48,7 +48,6 @@ const Postere = () => {
         <PosterImage src={Poster2FA} alt="Poster 2FA" />
         <PosterImage src={PosterEmail} alt="Poster Email" />
         <PosterImage src={Poster2FA} alt="Poster 2FA" />
-        {/* Poți adăuga mai multe imagini dacă este necesar */}
       </GalleryContainer>
     </div>
   );

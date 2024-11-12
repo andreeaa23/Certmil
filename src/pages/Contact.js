@@ -30,7 +30,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   height: auto;
-  width: 80%;
+  width: auto;
  // margin-top: 5vh;
   padding: 2vh 10vw;
   background-color: #f4f4f9;
